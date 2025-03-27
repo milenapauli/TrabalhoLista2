@@ -1,0 +1,222 @@
+@charset "UTF-8";
+:root{
+    --cor0:var(#FAF3E0);
+    --cor1:var(#E6D5B8);
+    --cor2:var(#C4A484);
+    --cor3:var(#8D6E63);  
+    --cor4:var(#361c15);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+
+    background-image:linear-gradient(to top, #361c15, transparent) ;
+    min-height: 100px;
+    text-align: center;
+    padding: 30px;
+    color:#000000;
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color:#000000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+}
+
+body{
+    background: #050505 url(IMAGEM/Ramificacao.jpg) center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    
+     
+}
+
+
+#pe{
+    margin: 0px;
+}
+
+
+
+article{
+    padding-bottom: 30px;
+}
+
+#tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 30px;
+    
+}
+
+table{
+    border-collapse: collapse;
+    
+    
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+caption{
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #C4A484;
+    padding: 5px;
+}
+
+thead{
+    background-color: #E6D5B8;
+    color: #361c1588;
+}
+
+
+
+footer{
+    background-color: #361c15;
+    color: rgb(247, 248, 248);
+    
+}
+
+footer > p{
+    margin: 10px;
+    
+}
+
+img{
+    margin: 15px;
+    width: 230px;
+    height: 230px;
+    border-radius: 25%;
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.301);
+}
+
+#cubo{
+    background-color: #c4a484b7;
+    border-radius: 30px;
+    margin: 15px;
+    max-width: 1100px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    left: 0px;
+    top: 50%;
+    margin-left: 120px;
+    box-shadow: 0px 0px 0px 2px #361c1549 ;
+}
+
+#cubo > p{
+    text-align: center;
+}
+
+#area-perfil {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+}
+
+#area-perfil button {
+    background: #8D6E63;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+
+
+/* Estilos para a página do integrante */
+#perfil-integrante {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.foto-perfil {
+    text-align: center;
+    background: none;
+}
+
+.foto-perfil img{ 
+    -webkit-transition: -webkit-transform .90s ease;
+    transition: transform .8s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.foto-perfil img {
+    width: 250px;       /* Tamanho da foto */
+    height: 250px;      /* Manter igual à largura para perfeito redondo */
+    border-radius: 50%; /* Isso que cria o efeito redondo */
+    object-fit: cover;  /* Garante que a imagem preencha o espaço sem distorcer */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16); 
+}
+
+.info-integrante {
+    max-width: 600px;
+    background-color: #ac634f;
+}
+
+.info-integrante h2 {
+    color: #000000;
+    margin-top: 20px;
+    border-bottom: 2px solid #C4A484;
+    padding-bottom: 5px;
+}
+
+.info-integrante p, .info-integrante li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-integrante ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    #perfil-integrante {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-integrante {
+        text-align: center;
+    }
+    
+    .info-integrante ul {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+}
+

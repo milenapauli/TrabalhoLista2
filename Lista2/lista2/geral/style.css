@@ -1,0 +1,161 @@
+@charset "UTF-8";
+    
+
+:root{
+    --cor0:var(#FAF3E0);
+    --cor1:var(#E6D5B8);
+    --cor2:var(#C4A484);
+    --cor3:var(#8D6E63);  
+    --cor4:var(#361c15);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+
+    background-image:linear-gradient(to top, #361c15, transparent) ;
+    min-height: 100px;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+header > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color:#000000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+}
+
+body{
+    background: #050505 url(../IMAGEM/Ramificacao.jpg) center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    
+    
+     
+}
+
+main{
+    background-color: white;
+    padding: 15px;
+    
+    
+}
+
+main h1{
+    padding: 20px;
+}
+
+main h2{
+    padding: 15px;
+}
+
+p{
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.6em;
+    
+}
+
+nav{
+    background-color: #361c15;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+
+nav > ul.active{
+    display: block;
+    
+}
+
+nav > ul{
+    display: none;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav > ul > li > a:hover{
+    background-color: #e6d5b883; 
+    color: #361c15; 
+}
+
+nav > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-top: 2px solid #C4A484;
+    border-radius: 15px;
+    color: #E6D5B8; 
+    
+
+} 
+
+div{
+    background-color: #361c15;
+}
+
+div > a{
+    color: rgba(255, 255, 255, 0.897);
+    text-decoration: none;
+    width: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+div > a:hover{
+    background-color: #e6d5b883;
+    color: #361c15;
+}
+
+
+button{
+    all:unset ;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+    
+}
+
+button:hover{
+    background-color: #e6d5b883;
+    color: #361c15;
+} 
+
+
+
+article{
+    padding-bottom: 30px;
+}
+
+footer{
+    background-color: #361c15;
+    padding: 4px;
+
+}
+
+
+
+footer a{
+    color: #E6D5B8;
+    text-decoration: none;
+    margin: 600px;
+    
+}
+
+
+
